@@ -36,6 +36,10 @@ dnsdomainname
 hostname --fqdn
 
 ```
+### Change directory
+```
+cd /etc/bind/
+```
 ### Edit named.conf.options file
 ```
 nano named.conf.options
