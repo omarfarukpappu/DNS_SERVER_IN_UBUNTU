@@ -179,3 +179,26 @@ cat /etc/resolv.conf
 ```
 dig @192.168.100.201 sims.Technometrics.net
 ```
+### dns response
+```
+; <<>> DiG 9.18.33-1~deb12u2-Debian <<>> @192.168.100.201 sims.Technometrics.net
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 51276
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: d8a6709feefc1e3a0100000068a6bc0c71a183450cc248e9 (good)
+;; QUESTION SECTION:
+;sims.Technometrics.net.                IN      A
+
+;; ANSWER SECTION:
+sims.Technometrics.net. 604800  IN      A       192.168.100.35
+
+;; Query time: 0 msec
+;; SERVER: 192.168.100.201#53(192.168.100.201) (UDP)
+;; WHEN: Thu Aug 21 12:26:20 +06 2025
+;; MSG SIZE  rcvd: 95
+```
