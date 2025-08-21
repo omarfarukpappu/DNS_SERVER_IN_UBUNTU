@@ -171,9 +171,23 @@ service bind9 restart
 ```
 nslookup www.Technometrics.net
 ```
+### response 
+```
+Server:         192.168.100.201
+Address:        192.168.100.201#53
+
+Name:   www.Technometrics.net
+Address: 192.168.100.201
+```
 ### dns file
 ```
 cat /etc/resolv.conf
+```
+### response resolve file
+```
+search 1
+nameserver 192.168.100.201
+nameserver 8.8.8.8
 ```
 ### check dns response
 ```
